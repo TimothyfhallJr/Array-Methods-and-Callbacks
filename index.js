@@ -41,11 +41,11 @@ console.log(getYears(getFinals(fifaData)));
 
 function getWinners(Winners) {
 
-return  Winners.map(obj => {
-    if (obj['Home Team Goals'] > obj['Away Team Goals']) {
-        return obj['Home Team Name'];
+return  Winners.map(match => {
+    if (match['Home Team Goals'] > match['Away Team Goals']) {
+        return match['Home Team Name'];
     } else {
-        return obj['Away Team Name'];
+        return match['Away Team Name'];
     }
 });
     /* code here */
